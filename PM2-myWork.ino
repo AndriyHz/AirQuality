@@ -5,7 +5,7 @@
 //#include <LiquidCrystal.h>
 #include <stdio.h>
 #define N 23
-//LiquidCrystal lcd(8, 9, 4, 5, 6, 7);          //Wybór linii, do ktorych podłączony jest wyświetlacz
+//LiquidCrystal lcd(8, 9, 4, 5, 6, 7);          //Screen
 //char linia1[16], linia2[16];
 unsigned char bufor [N];
 int PM25 = 20, PM10 = 20, PM1 = 20;
@@ -50,7 +50,6 @@ void loop(){
       Serial.println("  ug/m3");
       Serial.println();     
       
-       
 }
 
 int znachenjaPM1(unsigned char *buf) // generacja wartosci PM1.0

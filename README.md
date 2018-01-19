@@ -8,7 +8,7 @@ Idea from http://www.pakmingwan.com/creating-a-pollution-sensor-based-on-plantow
 
 
 
-# FOR TEENSY 3.2  with SensoAir SB and BME280
+# FOR TEENSY 3.2  with SenseAir S8 and BME280
 PM2_with_S8_BME280-For-Teensy3.ino
 
 Idea from https://github.com/alanishungry/AirSensorPackage/tree/master/Read_and_print_data_from_PMS3003_alan

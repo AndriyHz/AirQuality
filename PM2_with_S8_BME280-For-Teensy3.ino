@@ -37,13 +37,13 @@ void setup() {
 //  Serial.begin(9600);   //set the serial's Baudrate of the air detector module
   Serial1.begin(9600);
 //CO2 code
-  //Serial.begin(9600);         //Opens the main serial port to communicate with the computer
+  Serial.begin(9600);         //Opens the main serial port to communicate with the computer
   K_30_Serial.begin(9600);    //Opens the virtual serial port with a baud of 9600
 
   //BME280
- //while (!Serial) //{
+ while (!Serial) {
     // Attente de l'ouverture du port série pour Arduino LEONARDO
-  //}
+  }
   //configuration du capteur
   capteur.settings.commInterface = I2C_MODE; 
   capteur.settings.I2CAddress = 0x76;

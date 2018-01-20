@@ -1,6 +1,10 @@
+// BME280
+#include "SparkFunBME280.h"
+#include "Wire.h"
+#include "SPI.h"
+
 // Code to use SoftwareSerial
 #include "SoftwareSerial.h"
-#include "SparkFunBME280.h"
 
 // BME280 
 BME280 capteur;

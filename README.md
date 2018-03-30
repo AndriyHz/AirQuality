@@ -13,3 +13,4 @@ PM2_with_S8_BME280-For-Teensy3.ino
 
 Idea from https://github.com/alanishungry/AirSensorPackage/tree/master/Read_and_print_data_from_PMS3003_alan
 
+# FOR NodeMcu  with PMC3003

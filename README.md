@@ -15,5 +15,7 @@ Idea from https://github.com/alanishungry/AirSensorPackage/tree/master/Read_and_
 
 # FOR NodeMcu  with PMC3003
 NodeMCU_with_Plantower_PMS3003.ino
+
 My_NodeMCU_with_Plantower_Thingspeak_BME280.ino
+
 The most of the BME280 sensor modules available on eBay or Aliexpress,  have I2C address to be 0x76. So, if you didn’t get any response from the sensor using the default address set in the Adafruit_BME280.h file, you might need to change that to 0x76.

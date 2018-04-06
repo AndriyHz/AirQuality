@@ -22,7 +22,7 @@ const char * myWriteAPIKey = "R1K2Y3C972LBAKQ7";// my thing speak apikey
 
 PMS pms(Serial);
 PMS::DATA data;
-//// BME280 ///////////////
+//////////////////////////////// BME280 ///////////////
 float h, t, p, pin, dp;
 char temperatureFString[6];
 char dpString[6];
@@ -31,18 +31,18 @@ char pressureString[7];
 char pressureInchString[6];
 
 Adafruit_BME280 bme; // I2C
+/////////////////////////// end BME280 ///////////////
 
-///////////////////////////
 void setup() {
     Serial.begin(9600); // so we can out put to the screen
     delay(10);
-////////////// BME280 ////////////
+//////////////////////////////// BME280 ///////////////
  Wire.begin(D3, D4); // Make sure you have D3 & D4 hooked up to the BME280
-  Wire.setClock(100000);
-/////////////////////////////////
+ Wire.setClock(100000);
+//////////////////////////// end BME280 ///////////////
+
     // We start by connecting to a WiFi network
     WiFiMulti.addAP(ssid, pass);
-
     Serial.println();
     Serial.println();
     Serial.print("Waiting for WiFi to connect...");
@@ -57,14 +57,14 @@ void setup() {
     Serial.println("IP address: ");
     Serial.println(WiFi.localIP());
 
-    //////// BME280 ///////////////////
+//////////////////////////////// BME280 ///////////////
     Serial.println(F("BME280 test"));
 
     if (!bme.begin()) {
     Serial.println("Could not find a valid BME280 sensor, check wiring!");
     while (1);
   }
-    //////////////////////////////////
+//////////////////////////// end BME280 ///////////////
     delay(500);
 
     // connect to thingspeak.com
@@ -80,7 +80,7 @@ void setup() {
  void loop() {
     if (pms.read(data))
   {
-    ///////// BME280 //////////
+//////////////////////////////// BME280 ///////////////
     h = bme.readHumidity();
     t = bme.readTemperature();
    // t = t*1.8+32.0;
@@ -106,19 +106,18 @@ void setup() {
    // Serial.print("Dew Point = ");
    // Serial.println(dpString);
     
-   ///////////////  end BME280 //////////////
+////////////////////////// end BME280 ///////////////
+        
     Serial.println("Data:");
-
     Serial.print("PM 1.0 (ug/m3): ");
     Serial.println(data.PM_AE_UG_1_0);
-
     Serial.print("PM 2.5 (ug/m3): ");
     Serial.println(data.PM_AE_UG_2_5);
-
     Serial.print("PM 10.0 (ug/m3): ");
     Serial.println(data.PM_AE_UG_10_0);
     Serial.println();
-    //unsigned long data = getValue(response);
+    
+        //unsigned long data = getValue(response);
     float a = data.PM_AE_UG_1_0;
       float b = data.PM_AE_UG_2_5;
         float c = data.PM_AE_UG_10_0;

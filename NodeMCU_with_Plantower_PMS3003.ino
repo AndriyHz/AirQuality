@@ -6,8 +6,8 @@
 #include <ESP8266WiFiMulti.h>
 // #define SLEEP_DELAY_IN_SECONDS 30*1 // every 1 mins 
 
-char *ssid = "HzA home studion";    //  your network SSID (name) 
-char *pass = "4LEV3ZSD54";   // your network password
+char *ssid = "****";    //  your network SSID (name) 
+char *pass = "****";   // your network password
 int status = WL_IDLE_STATUS;
 WiFiClient  client;
 

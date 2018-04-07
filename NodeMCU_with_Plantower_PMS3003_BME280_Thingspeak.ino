@@ -10,15 +10,15 @@
 #include <ESP8266WiFiMulti.h>
 #define SLEEP_DELAY_IN_SECONDS 30*1 // every 1 mins 
 
-char *ssid = "HzA home studion";    //  your network SSID (name) 
-char *pass = "4LEV3ZSD54";   // your network password
+char *ssid = "******";    //  your network SSID (name) 
+char *pass = "******";   // your network password
 int status = WL_IDLE_STATUS;
 WiFiClient  client;
 
 ESP8266WiFiMulti WiFiMulti;
 
-unsigned long myChannelNumber = 462442; // my thing speak account channel number
-const char * myWriteAPIKey = "R1K2Y3C972LBAKQ7";// my thing speak apikey
+unsigned long myChannelNumber = *****; // my thing speak account channel number
+const char * myWriteAPIKey = "*****";// my thing speak apikey
 
 PMS pms(Serial);
 PMS::DATA data;

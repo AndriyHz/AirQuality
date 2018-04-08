@@ -56,7 +56,16 @@ void setup() {
     Serial.println("WiFi connected");
     Serial.println("IP address: ");
     Serial.println(WiFi.localIP());
+    delay(500);
 
+
+    // connect to thingspeak.com
+    if (ThingSpeak.begin(client)) {
+    //feed back that we have connected to thingspeak
+    Serial.println("connected to ThingSpeak");
+    }
+    else  Serial.println("not connected to ThingSpeak");
+    
 //////////////////////////////// BME280 ///////////////
     Serial.println(F("BME280 test"));
 
@@ -65,16 +74,7 @@ void setup() {
     while (1);
   }
 //////////////////////////// end BME280 ///////////////
-    delay(500);
-
-    // connect to thingspeak.com
-    if (ThingSpeak.begin(client)) {
-    //feed back that we have connected to thingspeak
-    Serial.println("connected to ThingSpeak");
-    }
-    else  Serial.println("not connected to ThingSpeak");
-    }
-
+}
 // set up complete
  
  void loop() {

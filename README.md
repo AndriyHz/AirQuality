@@ -15,7 +15,19 @@ Idea from https://github.com/alanishungry/AirSensorPackage/tree/master/Read_and_
 
 # FOR NodeMcu  with PMC3003
 NodeMCU_with_Plantower_PMS3003.ino
+Plantower PMS 1003
+Plantower PMS 3003
+RX - TX;
+TX - RX;
 
 NodeMCU_with_Plantower_PMS3003_BME280_Thingspeak.ino
 
 The most of the BME280 sensor modules available on eBay or Aliexpress,  have I2C address to be 0x76. So, if you didn’t get any response from the sensor using the default address set in the Adafruit_BME280.h file, you might need to change that to 0x76.
+
+# FOR NodeMcu V3  with PMC3003 and Grove - Multichannel Gas Sensor
+
+Grove - Multichannel Gas Sensor
+D1 - SCL;
+D2 - SDA;
+
+

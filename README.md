@@ -26,11 +26,15 @@ TX - RX;
 
 The most of the BME280 sensor modules available on eBay or Aliexpress,  have I2C address to be 0x76. So, if you didn’t get any response from the sensor using the default address set in the Adafruit_BME280.h file, you might need to change that to 0x76.
 
-# FOR NodeMcu V3  with PMC3003 and Grove - Multichannel Gas Sensor
+# FOR NodeMcu V3  with PMC3003 and Grove - Multichannel Gas Sensor - BME280
 My_NodeMCU_with_Plantower_Thingspeak_MiCS-6814_advance.ino
 
 Grove - Multichannel Gas Sensor
 D1 - SCL;
 D2 - SDA;
+
+*For example, for most of the BME280 sensor modules available on eBay or Aliexpress have their I2C address to be 0x76. If you dont get a response from the sensor using the default address set in the Adafruit_BME280.h file, you might need to change it to 0x76.
+
+BME280 & ESP8266 Connection Points. ESP8266 3.3V to BME280 Vin, ESP8266 GND to BME280 GND, ESP8266 D4 to BME280 SCL, ESP8266 D3 to BME280 SDA. 
 
 

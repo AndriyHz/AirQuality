@@ -25,6 +25,7 @@ PM2_with_S8_BME280-For-Teensy3.ino
 1. My_NodeMCU_with_Plantower_Thingspeak_MiCS-6814_advance.ino
 2. My_NodeMCU_with_Plantower_Thingspeak_MiCS-6814_BME280_advance_V.ino
 
+Multichannel Gas Sensor MiCS-6814 Connection Points.
 > Grove - Multichannel Gas Sensor: D1 - SCL; D2 - SDA;
 
 * For example, for most of the BME280 sensor modules available on eBay or Aliexpress have their I2C address to be 0x76. If you dont get a response from the sensor using the default address set in the Adafruit_BME280.h file, you might need to change it to 0x76.

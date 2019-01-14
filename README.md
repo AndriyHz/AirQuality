@@ -23,7 +23,7 @@ PM2_with_S8_BME280-For-Teensy3.ino
 
 ## FOR NodeMcu V3 with PMC3003 and Grove - Multichannel Gas Sensor - BME280
 1. My_NodeMCU_with_Plantower_Thingspeak_MiCS-6814_advance.ino
-2. My_NodeMCU_with_Plantower_Thingspeak_MiCS-6814_BME280_advance_V.ino
+2. My_NodeMCU_with_Plantower_Thingspeak_MiCS-6814_BME280_advance.ino
 
 Multichannel Gas Sensor MiCS-6814 Connection Points.
 > Grove - Multichannel Gas Sensor: D1 - SCL; D2 - SDA;

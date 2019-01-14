@@ -169,8 +169,8 @@ float e;
     ThingSpeak.setField(1,data.PM_AE_UG_1_0);
     ThingSpeak.setField(2,data.PM_AE_UG_2_5);
     ThingSpeak.setField(3,data.PM_AE_UG_10_0);
-    ThingSpeak.setField(7,temperatureFString);
-    ThingSpeak.setField(8,humidityString);
+    ThingSpeak.setField(7,t);
+    ThingSpeak.setField(8,h);
     
     ////// MiCS-6814 /////////////////////////
       ThingSpeak.setField(4,c);

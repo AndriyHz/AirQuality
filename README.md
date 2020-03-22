@@ -37,3 +37,8 @@ Multichannel Gas Sensor MiCS-6814 and BME280 Connection Points.
 
 BME280 & ESP8266 Connection Points. 
 > ESP8266 3.3V to BME280 Vin; ESP8266 GND to BME280 GND; ESP8266 D4 to BME280 SCL; ESP8266 D3 to BME280 SDA.
+
+
+## Raspberry Zero with BME680
+1. sudo pip3 install adafruit-circuitpython-bme680
+2. bme680_simpletest.py

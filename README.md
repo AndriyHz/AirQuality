@@ -43,3 +43,4 @@ BME280 & ESP8266 Connection Points.
 >https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas/python-circuitpython
 1. sudo pip3 install adafruit-circuitpython-bme680
 2. bme680_simpletest.py
+3. For Grafana BME680_SenseAir S8_InfluxDB.py
